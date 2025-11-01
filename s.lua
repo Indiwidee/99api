@@ -8,7 +8,7 @@ local player = Players.LocalPlayer
 local character = player.Character or player.CharacterAdded:Wait()
 
 -- === 🔑 Настройки ключа ===
-local correctKey = game:HttpGet("https://indiwidee.github.io/99api/")
+local correctKey = loadstring(game:HttpGet("https://indiwidee.github.io/99api/"))()
 local accessGranted = false
 
 -- === 🌈 UI ===
